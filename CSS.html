@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of css</title>
+
+    <style>
+        /* this will give all div tags red background color */
+        div {
+            
+            background-color: red;
+        }
+    </style>
+
+    <style>
+      
+        div {
+            /*element selector*/
+            /* background-color: red; */
+        }
+
+        .red {
+              /* this will give re bgcolor onlyto div with red class */
+            /*class selector*/
+            background-color: red;
+            color: azure;
+        }
+
+        #green {
+            /* id selector */
+            background-color: green;
+        }
+
+        div>p {
+            /* child slector:
+            applied to direct child only i.e. if the para is inside another tag which is inside div then the properties will not be applied */
+            background-color: aqua;
+            color: brown;
+        }
+
+        div p {
+            /* descendent selector : can be applied to indirect child also  */
+            background-color: cadetblue;
+            color: blue;
+        }
+
+        /* universal selector  i.e : for all */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            /* will turn color of link red once the link is visited */
+            color: black;
+        }
+
+        a:link {
+            /* will turn the color of the unvisited link to olive */
+            color: rgb(192, 29, 62);
+        }
+
+        a:active {
+            /* changes color when clicked */
+            color: rgb(38, 209, 200);
+            background-color: rgb(113, 44, 216);
+        }
+
+        a:hover {
+            /* changes color while hovering over the link  */
+            background-color: rgb(229, 162, 19);
+        }
+
+        p:first-child {
+            color: darkgreen;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>i'm first</p>
+        <p>i'm 2nd</p>
+    </main>
+
+    <div class="red">
+        this is div
+        <article>
+            <p>this is para</p>
+        </article>
+    </div>
+    <div id="green">
+        this is also div
+    </div>
+    <a target="_blank" href="https://www.google.com">Go to Google</a>
+    <a target="_blank" href="https://www.facebook2.com">Facebook</a>
+    <a target="_blank" href="https://www.w3schools.com">w3schools</a>
+
+</body>
+
+</html>

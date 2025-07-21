@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS- how to make it</title>
+</head>
+<body>
+    <form>
+        <div>
+           <label for="username"> USERNAME </label>
+           <input type="text" id="username" name="username" value="" placeholder="enter username here" >
+        </div>
+        <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" placeholder="enter passsword here">
+        </div>
+        <div> 
+            <!--value of "name" must be same if want to choose one opion at a time-->
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender">
+        </div>
+        <div>
+            <label for="thoughts">Write your views</label>
+            <br>
+            <textarea name="thoughts" id="thoughts" rows="4" cols="6" placeholder="write here"></textarea>
+        </div>
+        <div>
+            <label for="ph">phone no.</label>
+            <input type="tel" id="ph" autofocus>
+        </div>
+        <div>
+            <label for="check">age above 18?</label>
+            <input type="checkbox" name="check" id="check" required>
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <label for="fruits"></label>
+            <select name="fruits" id="fruits">
+                <option value="apple">apple</option>
+                <option value="mango">mango</option>
+                <option value="plum">plum</option>
+                <option value="ornage">ornage</option>
+            </select>
+        </div>
+        <div>
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </div>
+        <div>
+            <label>age below 60?</label>
+            <input type="checkbox" name="check" id="check" required>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to add css to html</title>
+</head>
+<body>
+    <h1>3 ways to add css to html</h1>
+    <ol>
+        <li>inline</li>
+        <li>internal</li>
+        <li>external</li>
+    </ol>
+    <!-- Inline css -->
+     <h1 style="color: black; background-color: darkgray;" >this is css</h1>
+     <h2 style="color: rgb(222, 41, 235);">this is css line 2</h2>
+     <!-- internal css -->
+      <style>
+        h1
+        {
+           background-color: rebeccapurple;
+           color: red;
+        }
+      </style>
+      <style>
+        h2{
+            color: palevioletred;
+            background-color: darkgreen;
+        }
+      </style>
+      <!-- External css -->
+       <link rel="stylesheet" href="style.css">
+        <h3 style="background-color: aquamarine;">NOTE: 
+            <ol>
+                <li>if the selector is same then EXTERNAL CSS will overdo INTERNAL CSS but not INLINE CSS</li>
+                <li>if selector is same then EXTERNAL or INTERNAL CSS will appliedbut only for the PROPERTY which is not used in the inline css </li>
+            </ol>
+        </h3>
+</body>
+</html>

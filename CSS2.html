@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box: Margin, Border, Padding, Margin collapse</title>
+    <style>
+             *{
+                margin: 0;
+                padding: 0;
+             }
+               .box {
+                background-color: aqua;
+               }
+               .box1{
+                   color: red;
+                   padding: 10px;
+                   margin: 25px;
+                   border: 2px solid green;
+                   height: 200px;/*height of the content only excluding padding & margin*/
+                   box-sizing: border-box;/*This will include padding and border in the given height, but not the margin{total height here =200-(10+10+1.6+1.6)=176.800}*/
+                   /* when only height is given then its the height of content only but when box-sizing property is used then it means that the height given includes : height of content + padding + border */
+               }
+               .box2{
+                  color: yellow;
+                  padding: 10px;
+                   margin: 25px;
+                   border: 2px solid blue;
+                   height: 200px;
+                   box-sizing: border-box;
+               }
+               /*MARGIN COLLAPSE : the maximum margins of the 2 margins is applied when two boxes are there, if margins of the 2 boxes are same then its applied once commonly for both boxes */
+    </style>
+</head>
+<body>
+    <div class="box box1">i'm  box1</div>   <!-- we can give multiple classes to an element here "box" is one class and "box1" is 2nd class -->
+    <div class="box box2">i'm  box2</div>  <!-- here "box" is one class and "box2" is 2nd class -->         
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display property, CSS shadows and outlines, Styling lists</title>
+  <!-- Display Properties: https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+  <style>
+    * {
+      /* margin: 0; */
+      /* padding: 0; */
+    }
+
+    .box {
+      border: 2px solid green;
+      color: cornflowerblue;
+      /* display: inline; */
+      /* used to convert a block into inline element*/
+      padding: 45px;
+      margin: 34px;
+      display: inline-block;
+      /* converts a block into inline element & helps in applying padding, margin(on top), width etc. */
+      width: 344px;
+    }
+
+    .box1 {
+      /* display: none;   it will hide the box1 without leaving space for it */
+      /* visibility: hidden;  it will hide the box1 but leave space for it */
+    }
+
+    .container {
+      /* box-shadow: h-offset v-offset blur spread color inset; */
+      box-shadow: 5px 5px 15px 5px #257277;
+      /* text-shadow: h-offset v-offset blur color; */
+      text-shadow: 2px 2px 4px #8f2b65;
+      outline: 2px solid pink;
+      /* outside the border */
+      border: 2px solid green;
+      outline-offset: 5px;
+      /*distance between outline and edge of border */
+    }
+
+    nav ul li {
+      /* list-style: devanagari; */
+      /* list-style-type: "🔥"; */
+      /* background-color: #8f2b65; */
+      /* list-style-position: inside; */
+      /* border: 2px solid black; */
+      /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+      /* list-style: disc inside ; */
+      /* list-style: inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+      list-style: none;
+      /*removes marker */
+      padding: 24px;
+    }
+    ul {
+      display: flex;
+      /*makes list horizontal*/
+    }
+    div p{
+      /* Overflow handling */
+      width: 10vw;
+      height:10vh;
+      border: 2px solid gray;
+      /* overflow: hidden;  hides overflowed content */
+       /* overflow: clip; prevents scrolling */
+      /* overflow: scroll;  displays horizontal and vertical scrollbar even if not needed*/
+      /* white-space: nowrap;            displays all the content horizontally */
+       /* text-overflow: ellipsis;  displays dots by hiding content */
+       /*overflow: auto;   displays horizontal and vertical scrollbar if needed 
+        overflow-y: hidden; 
+        overflow-x: auto; */
+       /* overflow: auto hidden;      x=auto,y=hidden */
+       /* overflow: hidden auto;      x=hidden,y=auto */
+       /* overflow: scroll hidden; */
+       /* overflow: hidden scroll; */
+       /* overflow: hidden hidden; */
+       
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box box1">
+    This is a box
+  </div>
+  <div class="box">
+    and also very beautiful.
+  </div>
+  <span>I'm a good</span>
+  <span>boy</span>
+  <div class="container">
+    I am a container.
+  </div>
+  <br>
+  <nav>
+    <!--padding: 0; will hide the markers of the list-->
+    <ul>
+      <li>home</li>
+      <li>house</li>
+      <li>ghar</li>
+    </ul>
+  </nav>
+  <div>
+    <p>
+      Lorem ipsum dolgfghdtfhjfor sit amet consgfhsjrhugfftectetur, adipisicing elit. Repudiandae minima ut dolorum magnam dignissimos nemo et
+      id repellat? Itaque delectus enim inventore? Officia mollitia aliquam impedit aut quis, dolorum voluptates
+      possimus facilis repellat error eum totam, nemo, at blanditiis laudantium quas sunt dicta nulla eos veniam in
+      optio ut ducimus quidem. Laborum fuga laboriosam optio dolorem nesciunt dolorum aspernatur cumque?
+      Lorem ipsum dolor sit amet consectetur adihfygfjtyefhgrpisicing elit. Tempore cupiditate est corporis, iure consectetur ex maxime assumenda quisquam voluptates neque laborum necessitatibus labore eos eaque itaque? Ipsa nisi quas, veniam qui id, corporis consequatur laudantium illo quo, similique accusamus atque nemo minus quia quos eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ab voluptatibus laudantium rerum ex ipsum fugiat cum! Vel ab illum laboriosam perferendis optio, ipsa eius quos cumque rem sint dicta iure sapiente officia culpa velit aut placeat fugiat repellendus itaque ea aliquid aspernatur? Velit minima architecto, quod impedit, perferendis placeat beatae nulla veritatis debitis nostrum quam, odit exercitationem.
+    </p>
+  </div>
+</body>
+
+</html>
